@@ -13,28 +13,48 @@
     </head>
 
     <body>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center fixed-top">
-            <!--Logo-->
-            <a class="navbar-brand" href="index.html">James Wisniewski</a>
-            <ul class="navbar-nav">
-                <!--Links-->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+        <div class="container-fluid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center static-top p-3">
+                <!--Logo-->
+                <a class="navbar-brand mr-5" href="index.html">James Wisniewski</a>
+                <ul class="navbar-nav">
+                    <!--Links-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
 
-                <!--Dropdown-->
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="project1.html">Project 1</a>
-                        <a class="dropdown-item" href="project2.html">Project 2</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+                    <!--Dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="project1.html">Project 1</a>
+                            <a class="dropdown-item" href="project2.html">Project 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Columns-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <p><a href="project1.html">Learn more here</a></p>
+                </div>
+                <div class="col">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <p><a href="project2.html">Learn more here</a></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
