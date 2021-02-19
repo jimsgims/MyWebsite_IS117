@@ -1,7 +1,7 @@
 # Website of James Wisniewski
 Created by James Wisniewski
 
-###Links
+### Links
 
 [Github](https://jimsgims.github.io/MyWebsite_IS117/)
 
