@@ -2,6 +2,7 @@
 Created by James Wisniewski
 
 ###Links
+
 [Github](https://jimsgims.github.io/MyWebsite_IS117/)
 
 [NJIT AFS](https://web.njit.edu/~jsw36/is117mywebsite/docs/index.html) (not working at the moment)
