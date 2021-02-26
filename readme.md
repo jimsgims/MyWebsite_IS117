@@ -14,6 +14,8 @@ Created by James Wisniewski
 
 This is a website used to host some work I've done for the class IS 117.
 
-Construction for Project 1 is underway. Click the Project 1 link to be redirected to it.
+Project 1 work is completed for the most part, and any updates for it would be for typo corrections or better formatting.
+
+Project 2 work is underway!
 
 Many implementations are thanks to Bootstrap 4!
