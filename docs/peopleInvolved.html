@@ -15,55 +15,56 @@
     <body>
         <div class="container-fluid">
             <!--Navbar-->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center static-top p-3">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark static-top p-3">
                 <!--Logo-->
-                <a class="navbar-brand mr-5" href="index.html">James Wisniewski</a>
-                <ul class="navbar-nav">
-                    <!--Links-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
+                <a class="navbar-brand mr-5 ml-3" href="index.html">James Wisniewski</a>
 
-                    <!--Dropdown-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item active bg-dark" href="project1.html">Project 1</a>
-                            <a class="dropdown-item" href="project2.html">Project 2</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <!-- Toggle/collapsible Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!--Project 1 Navbar-->
-        <div class="container-fluid">
-            <!--Navbar-->
-            <nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center static-top">
-                <ul class="navbar-nav">
-                    <!--Links-->
-                    <li class="nav-item pr-4">
-                        <a class="nav-link" href="project1.html">History of the Internet</a>
-                    </li>
-                    <li class="nav-item pr-4">
-                        <a class="nav-link" href="inventionOfInternet.html">The Invention of the Internet</a>
-                    </li>
-                    <li class="nav-item pr-4">
-                        <a class="nav-link" href="browserWars.html">Browser Wars</a>
-                    </li>
-                    <li class="nav-item pr-4">
-                        <a class="nav-link" href="internetSearch.html">Internet Search</a>
-                    </li>
-                    <li class="nav-item pr-4">
-                        <a class="nav-link" href="dotCom.html">Dot Com Bubble</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="peopleInvolved.html">People</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="collapseNavbar">
+                    <ul class="navbar-nav">
+                        <!--Links-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!--Dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item active bg-dark" href="project1.html">Project 1</a>
+                                <a class="dropdown-item" href="project2.html">Project 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <!--Links-->
+                        <li class="nav-item pr-4 active">
+                            <a class="nav-link" href="project1.html">History of the Internet</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="inventionOfInternet.html">The Invention of the Internet</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="browserWars.html">Browser Wars</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="internetSearch.html">Internet Search</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="dotCom.html">Dot Com Bubble</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="peopleInvolved.html">People</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
 
