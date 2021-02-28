@@ -1,175 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile-friendly-->
-    <title>IPs, Packets, and Routing - How the Internet Works</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile-friendly-->
+        <title>IPs, Packets, and Routing - How the Internet Works</title>
 
-    <!--Bootstrap stuff-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+        <!--Bootstrap stuff-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
 
-<body>
-<div class="container-fluid">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark static-top p-3">
-        <!--Logo-->
-        <a class="navbar-brand mr-5 ml-3" href="index.html">James Wisniewski</a>
+    <body>
+        <div class="container-fluid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark static-top p-3">
+                <!--Logo-->
+                <a class="navbar-brand mr-5 ml-3" href="index.html">James Wisniewski</a>
 
-        <!-- Toggle/collapsible Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Toggle/collapsible Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="collapseNavbar">
-            <ul class="navbar-nav">
-                <!--Links-->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+                <div class="collapse navbar-collapse" id="collapseNavbar">
+                    <ul class="navbar-nav">
+                        <!--Links-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
 
-                <!--Dropdown-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="project1.html">Project 1</a>
-                        <a class="dropdown-item active bg-dark" href="project2.html">Project 2</a>
+                        <!--Dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="project1.html">Project 1</a>
+                                <a class="dropdown-item active bg-dark" href="project2.html">Project 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <!--Links-->
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="project2.html">Project Home</a>
+                        </li>
+                        <li class="nav-item pr-4 active">
+                            <a class="nav-link" href="ipAddresses.html">IP Addresses, Packets and Routing</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="DNS.html">DNS</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="HTTPprotocols.html">HTTP and HTTPS Protocols</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="domainAndICANN.html">Domain Names and ICANN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="W3CHTMLCSS.html">W3C, HTML and CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container mt-4 text-center display-1">
+            <h1 class="display-1">IPs, Packets and Routing</h1>
+        </div>
+
+        <!--Temporary Text-->
+        <div class="container mt-5">
+            <h3>The beginning</h3>
+            <p>The Internet's working protocols were developed by Vint Cerf and Bob Kahn, and were done to standardize
+            a method for networks to communicate with each other. Their work is essentially the groundwork for the
+            Internet. Behind it, its design philosophy and architecture are expressed in a set of protocols. Protocols
+            are a well-known set of rules and standards used by machines to communicate with one another. These protocols
+            are very useful for the Internet to adapt and absorb new communication technologies.</p>
+        </div>
+
+        <div class="container mt-5">
+            <h3>How does communication work on the Internet?</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Computers communicate with each other in a fashion similar to the postal service, but instead it
+                    ships binary information in bits. Bits are the smallest unit of measurement for computer data. Eight
+                    bits is equal to a byte; a thousand bytes is equal to a kilobyte, and a thousand kilobytes is equal
+                    to one megabyte, and so forth.</p>
+                    <p>Bits are sent by electricity, light, and radio waves. The transmission capacity for any device
+                    to send bits is called bandwidth, and bandwidth is measured by its bitrate. Bitrate is the number
+                    of bits per second a system can transmits. Lastly, latency is the time it takes for a bit to travel
+                    from sender to receiver.</p>
+                    <p>Data can travel through a variety of methods:</p>
+                    <li class="mb-2"><strong>Electric</strong> - cheap, signal loss over a few hundred feet</li>
+                    <li class="mb-2"><strong>Light</strong> - fast, no signal loss, expensive, hard to work with</li>
+                    <li><strong>Radio</strong> - wireless, signal loss</li>
+                </div>
+                <div class="col-sm-6">
+                    <p>All devices have a unique address, usually a set of numbers. This is specifically called an
+                    internet protocol address, or IP for short. IPs are how devices can get addresses to send and
+                    deliver messages over the Web. For example, if I wanted to visit a website on my phone, my phone
+                    will ask for the IP address of the target computer which hosts the website, and said target
+                    computer will deliver that information back so I can access it.</p>
+                    <p>IP addresses follow a hierarchy under the IPv4 system. These traditional IP addresses are 32
+                    bits in length, with 8 bits for each of the four parts of the address. The hierarchy starts from
+                    the country, then region, then subnetwork, then device.</p>
+                    <p>In our time, we are currently transitioning to a new hierarchy system called IPv6. Our current
+                    IPv4 system has up to four billion combinations, but that is definitively not enough to supply
+                    all of the devices existing in the world. IPv6 uses 128 bits per address, much more than before,
+                    providing over 340 undecillion unique addresses.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h3>How is data delivered?</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>There is no direct dedicated connection for every device, as this system would be impossible to
+                    manage with the billions of devices participating throughout the world, even ignoring the fact that
+                    the hypothetical infrastructure of it would be perfectly maintained at all times. Instead, data
+                    travels through a much-less direct method. It doesn't travel in a fixed path, but rather through
+                    "packets," which aim to take the best possible route to their destination based on obstacles and
+                    traffic congestion.</p>
+                    <p>Each packet can hold only a limited amount of data. Files that are transferred are usually broken
+                    up into hundreds, if not thousands of packets. Each packet knows its destination, but all of them
+                    travel in different directions for the most optimal path. Along the way, they travel through routers,
+                    which act like "packet managers," so to speak. They ensure packets are moving to their destination,
+                    sending them on the many paths available to them. This mesh-like network makes it fault-tolerant,
+                    so that if some pathways are unavailable, there's always more paths to take.</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>How is this data assured to be perfect when it arrives at its destination? For that, there's
+                    something called the Transmission Control Protocol (TCP for short), which is like a "guaranteed mail
+                    service," if you go back to the earlier postal service metaphor. TCP ensures all the packets are
+                    delivered to its destination, checking that each and every packet arrived. If packets are missing,
+                    then TCP ensures they're re-sent through the network. Once all the packets arrive, then the packets
+                    are combined to recreate the file that was sent originally.</p>
+                    <p>The TCP and router mesh network system is scalable, working with as many devices as it needs.
+                    Since routers act as packet managers, then the more routers that are added to the system, the more
+                    reliable a network actually becomes. Because of this, we can scale the Internet's infrastructure
+                    without interrupting any current connections.</p>
+                    <p>Overall, protocols ensure networks and devices connect, communicate, and collaborate with each
+                    other because of the agreed-upon standards for how data is sent around the internet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <img src="images/meshNetwork.jpg" class="rounded" style="width: 100%">
+                    <p class="text-muted text-center mt-2">An artistic representation of what a mesh network would
+                        look like.</p>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="bg-dark text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <!--Info-->
+                    <div class="col-lg-3 m-auto">
+                        <h1 class="text-white pb-2">James Wisniewski</h1>
+                        <p class="text-white">This website hosts the projects that I'm creating in IS117.</p>
                     </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto mr-3">
-                <!--Links-->
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="project2.html">Project Home</a>
-                </li>
-                <li class="nav-item pr-4 active">
-                    <a class="nav-link" href="ipAddresses.html">IP Addresses, Packets and Routing</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="DNS.html">DNS</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="HTTPprotocols.html">HTTP and HTTPS Protocols</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="domainAndICANN.html">Domain Names and ICANN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="W3CHTMLCSS.html">W3C, HTML and CSS</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+                    <div class="col-lg-3"></div>
+                    <!--Links-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Explore</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="index.html" class="text-info small">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-info small">About</a>
+                            </li>
+                            <li>
+                                <a href="projects.html" class="text-info small">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
 
-<div class="container mt-4 text-center display-1">
-    <h1 class="display-1">Title</h1>
-</div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Project 1</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="project1.html" class="text-info small">History of the Internet</a>
+                            </li>
+                            <li>
+                                <a href="inventionOfInternet.html" class="text-info small">Invention of the Internet</a>
+                            </li>
+                            <li>
+                                <a href="browserWars.html" class="text-info small">Browser Wars</a>
+                            </li>
+                            <li>
+                                <a href="internetSearch.html" class="text-info small">Internet Search</a>
+                            </li>
+                            <li>
+                                <a href="dotCom.html" class="text-info small">Dot Com Bubble</a>
+                            </li>
+                            <li>
+                                <a href="peopleInvolved.html" class="text-info small">People</a>
+                            </li>
+                        </ul>
+                    </div>
 
-<!--Temporary Text-->
-<div class="container mt-5">
-    <h1>Section header</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.</p>
-</div>
-<div class="container mt-5 mb-5">
-    <h1>Last section header</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.</p>
-</div>
-
-<!--Footer-->
-<footer class="bg-dark text-center text-lg-start">
-    <div class="container p-4">
-        <div class="row">
-            <!--Info-->
-            <div class="col-lg-3 m-auto">
-                <h1 class="text-white pb-2">James Wisniewski</h1>
-                <p class="text-white">This website hosts the projects that I'm creating in IS117.</p>
-            </div>
-            <div class="col-lg-3"></div>
-            <!--Links-->
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-white">Explore</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="index.html" class="text-info small">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="text-info small">About</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="text-info small">Projects</a>
-                    </li>
-                </ul>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Project 2</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="project2.html" class="text-info small">Project Home</a>
+                            </li>
+                            <li>
+                                <a href="ipAddresses.html" class="text-info small">IPs, Packets and Routing</a>
+                            </li>
+                            <li>
+                                <a href="DNS.html" class="text-info small">DNS</a>
+                            </li>
+                            <li>
+                                <a href="HTTPprotocols.html" class="text-info small">HTTP and HTTPS Protocols</a>
+                            </li>
+                            <li>
+                                <a href="domainAndICANN.html" class="text-info small">Domain Names and ICANN</a>
+                            </li>
+                            <li>
+                                <a href="W3CHTMLCSS.html" class="text-info small">W3C, HTML and CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-white">Project 1</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="project1.html" class="text-info small">History of the Internet</a>
-                    </li>
-                    <li>
-                        <a href="inventionOfInternet.html" class="text-info small">Invention of the Internet</a>
-                    </li>
-                    <li>
-                        <a href="browserWars.html" class="text-info small">Browser Wars</a>
-                    </li>
-                    <li>
-                        <a href="internetSearch.html" class="text-info small">Internet Search</a>
-                    </li>
-                    <li>
-                        <a href="dotCom.html" class="text-info small">Dot Com Bubble</a>
-                    </li>
-                    <li>
-                        <a href="peopleInvolved.html" class="text-info small">People</a>
-                    </li>
-                </ul>
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © Copyright 2021: James Wisniewski
             </div>
-
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-white">Project 2</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="project2.html" class="text-info small">Project Home</a>
-                    </li>
-                    <li>
-                        <a href="ipAddresses.html" class="text-info small">IPs, Packets and Routing</a>
-                    </li>
-                    <li>
-                        <a href="DNS.html" class="text-info small">DNS</a>
-                    </li>
-                    <li>
-                        <a href="HTTPprotocols.html" class="text-info small">HTTP and HTTPS Protocols</a>
-                    </li>
-                    <li>
-                        <a href="domainAndICANN.html" class="text-info small">Domain Names and ICANN</a>
-                    </li>
-                    <li>
-                        <a href="W3CHTMLCSS.html" class="text-info small">W3C, HTML and CSS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © Copyright 2021: James Wisniewski
-    </div>
-</footer>
-</body>
+        </footer>
+    </body>
 </html>
