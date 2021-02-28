@@ -1,175 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile-friendly-->
-    <title>W3C, HTML, and CSS - How the Internet Works</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile-friendly-->
+        <title>W3C, HTML, and CSS - How the Internet Works</title>
 
-    <!--Bootstrap stuff-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+        <!--Bootstrap stuff-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
 
-<body>
-<div class="container-fluid">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark static-top p-3">
-        <!--Logo-->
-        <a class="navbar-brand mr-5 ml-3" href="index.html">James Wisniewski</a>
+    <body>
+        <div class="container-fluid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark static-top p-3">
+                <!--Logo-->
+                <a class="navbar-brand mr-5 ml-3" href="index.html">James Wisniewski</a>
 
-        <!-- Toggle/collapsible Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Toggle/collapsible Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="collapseNavbar">
-            <ul class="navbar-nav">
-                <!--Links-->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+                <div class="collapse navbar-collapse" id="collapseNavbar">
+                    <ul class="navbar-nav">
+                        <!--Links-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
 
-                <!--Dropdown-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="project1.html">Project 1</a>
-                        <a class="dropdown-item active bg-dark" href="project2.html">Project 2</a>
+                        <!--Dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects.html" id="navbardrop" data-toggle="dropdown">Projects</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="project1.html">Project 1</a>
+                                <a class="dropdown-item active bg-dark" href="project2.html">Project 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <!--Links-->
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="project2.html">Project Home</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="ipAddresses.html">IP Addresses, Packets and Routing</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="DNS.html">DNS</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="HTTPprotocols.html">HTTP and HTTPS Protocols</a>
+                        </li>
+                        <li class="nav-item pr-4">
+                            <a class="nav-link" href="domainAndICANN.html">Domain Names and ICANN</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="W3CHTMLCSS.html">W3C, HTML and CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container mt-4 text-center display-1">
+            <h1 class="display-1">W3C, HTML and CSS</h1>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>What is the W3C?</h3>
+                    <p>The World Wide Web Consortium (W3C) is an international community where they work to develop standards
+                    for the Internet. It is currently led by Web-inventor Tim Berners-Lee and CEO Jeffrey Jaffe. Their
+                    mission is to develop protocols and guidelines to ensure the long-term growth of the Internet. Here
+                    are a few of their goals:</p>
+                    <li class="mb-2"><strong>Web for All</strong> - have the benefits of human communication, commerce,
+                    and opportunities to share knowledge available to all people, regardless of any limitations that
+                    people are experiencing.</li>
+                    <li class="mb-2"><strong>Web on Everything</strong> - have the Internet available to all electronic
+                    devices.</li>
+                    <li class="mb-2"><strong>Web for Rich Interaction</strong> - encourage the development of new ways
+                    of creating a flourishing market for content and personalized Web experiences.</li>
+                    <li class="mb-2"><strong>Web of Data and Services</strong> - create an environment where the Internet
+                    is both a giant repository of linked data while also a giant set of services that exchange messages.</li>
+                    <li><strong>Web of Trust</strong> - encourage the new and unprecedented nature of social
+                    relationships developed on the Internet.</li>
+
+                </div>
+                <!--Card-->
+                <div class="col-sm-3">
+                    <div class="card bg-dark p-2" style="width:100%">
+                        <img class="card-img-top" src="images/bernersLee.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-white">Tim Berners-Lee</h4>
+                            <p class="card-text text-white">The father of the World Wide Web. Current director
+                            of W3C.</p>
+                            <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" class="btn btn-primary">Wikipedia</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto mr-3">
-                <!--Links-->
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="project2.html">Project Home</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="ipAddresses.html">IP Addresses, Packets and Routing</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="DNS.html">DNS</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="HTTPprotocols.html">HTTP and HTTPS Protocols</a>
-                </li>
-                <li class="nav-item pr-4">
-                    <a class="nav-link" href="domainAndICANN.html">Domain Names and ICANN</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="W3CHTMLCSS.html">W3C, HTML and CSS</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-
-<div class="container mt-4 text-center display-1">
-    <h1 class="display-1">Title</h1>
-</div>
-
-<!--Temporary Text-->
-<div class="container mt-5">
-    <h1>Section header</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.</p>
-</div>
-<div class="container mt-5 mb-5">
-    <h1>Last section header</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.</p>
-</div>
-
-<!--Footer-->
-<footer class="bg-dark text-center text-lg-start">
-    <div class="container p-4">
-        <div class="row">
-            <!--Info-->
-            <div class="col-lg-3 m-auto">
-                <h1 class="text-white pb-2">James Wisniewski</h1>
-                <p class="text-white">This website hosts the projects that I'm creating in IS117.</p>
-            </div>
-            <div class="col-lg-3"></div>
-            <!--Links-->
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-white">Explore</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="index.html" class="text-info small">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="text-info small">About</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="text-info small">Projects</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-white">Project 1</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="project1.html" class="text-info small">History of the Internet</a>
-                    </li>
-                    <li>
-                        <a href="inventionOfInternet.html" class="text-info small">Invention of the Internet</a>
-                    </li>
-                    <li>
-                        <a href="browserWars.html" class="text-info small">Browser Wars</a>
-                    </li>
-                    <li>
-                        <a href="internetSearch.html" class="text-info small">Internet Search</a>
-                    </li>
-                    <li>
-                        <a href="dotCom.html" class="text-info small">Dot Com Bubble</a>
-                    </li>
-                    <li>
-                        <a href="peopleInvolved.html" class="text-info small">People</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-white">Project 2</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="project2.html" class="text-info small">Project Home</a>
-                    </li>
-                    <li>
-                        <a href="ipAddresses.html" class="text-info small">IPs, Packets and Routing</a>
-                    </li>
-                    <li>
-                        <a href="DNS.html" class="text-info small">DNS</a>
-                    </li>
-                    <li>
-                        <a href="HTTPprotocols.html" class="text-info small">HTTP and HTTPS Protocols</a>
-                    </li>
-                    <li>
-                        <a href="domainAndICANN.html" class="text-info small">Domain Names and ICANN</a>
-                    </li>
-                    <li>
-                        <a href="W3CHTMLCSS.html" class="text-info small">W3C, HTML and CSS</a>
-                    </li>
-                </ul>
+                </div>
+                <!--Header and text-->
+                <div class="col-sm-3 pt-2">
+                    <p>Tim Berners-Lee is a computer scientists best known as the inventor of the World Wide Web. He is
+                    known for this as he implemented the first successful communication between an HTTP client and server
+                    via the Internet in November of 1989.</p>
+                    <p>Amongst other titles, he's a professorial fellow of Computer Science at the University of Oxford
+                    and a professor at the Massachusetts Institute of Technology (MIT). He's won many awards and
+                    honours, such as being knighted by Queen Elizabeth II in 2004 and the ACM Turing Award in 2016.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © Copyright 2021: James Wisniewski
-    </div>
-</footer>
-</body>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>HTML</h3>
+                    <p>HTML is the language used for describing the structure of web pages, allowing authors to:</p>
+                    <li class="mb-2">Publish online documents with headings, text, tables, lists, photos, etc.</li>
+                    <li class="mb-2">Retrieve online information via hypertext links at the click of a button</li>
+                    <li class="mb-2">Design forms for conducing transactions with remote services, for use in searching
+                    for information, making reservations, ordering products, and more</li>
+                    <li>Include spreadsheets, video clips, sound clips, and other applications directly in their
+                    documents.</li>
+                </div>
+                <div class="col-sm-6">
+                    <h3>CSS</h3>
+                    <p>CSS is the language used for describing the presentation of web pages, including colors, layouts,
+                    and fonts. It helps us adapt the presentation to different types of devices with small and large
+                    screens. It is independent of HTML and can be used with any XML-based markup language; this makes it
+                    easier to maintain sites, share style sheets across pages, and tailor pages to different
+                    environments.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <footer class="bg-dark text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <!--Info-->
+                    <div class="col-lg-3 m-auto">
+                        <h1 class="text-white pb-2">James Wisniewski</h1>
+                        <p class="text-white">This website hosts the projects that I'm creating in IS117.</p>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <!--Links-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Explore</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="index.html" class="text-info small">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-info small">About</a>
+                            </li>
+                            <li>
+                                <a href="projects.html" class="text-info small">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Project 1</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="project1.html" class="text-info small">History of the Internet</a>
+                            </li>
+                            <li>
+                                <a href="inventionOfInternet.html" class="text-info small">Invention of the Internet</a>
+                            </li>
+                            <li>
+                                <a href="browserWars.html" class="text-info small">Browser Wars</a>
+                            </li>
+                            <li>
+                                <a href="internetSearch.html" class="text-info small">Internet Search</a>
+                            </li>
+                            <li>
+                                <a href="dotCom.html" class="text-info small">Dot Com Bubble</a>
+                            </li>
+                            <li>
+                                <a href="peopleInvolved.html" class="text-info small">People</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Project 2</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="project2.html" class="text-info small">Project Home</a>
+                            </li>
+                            <li>
+                                <a href="ipAddresses.html" class="text-info small">IPs, Packets and Routing</a>
+                            </li>
+                            <li>
+                                <a href="DNS.html" class="text-info small">DNS</a>
+                            </li>
+                            <li>
+                                <a href="HTTPprotocols.html" class="text-info small">HTTP and HTTPS Protocols</a>
+                            </li>
+                            <li>
+                                <a href="domainAndICANN.html" class="text-info small">Domain Names and ICANN</a>
+                            </li>
+                            <li>
+                                <a href="W3CHTMLCSS.html" class="text-info small">W3C, HTML and CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © Copyright 2021: James Wisniewski
+            </div>
+        </footer>
+    </body>
 </html>
