@@ -1,0 +1,8 @@
+User agent: *
+Disallow: /images/
+
+Craw-delay: 120
+
+Sitemap: https://jimsgims.github.io/MyWebsite_IS117/
+Sitemap: https://jimsgims.github.io/MyWebsite_IS117/project1.html
+Sitemap: https://jimsgims.github.io/MyWebsite_IS117/project2.html
