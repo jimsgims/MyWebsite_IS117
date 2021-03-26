@@ -12,14 +12,13 @@ Created by James Wisniewski
 
 [Project 2](https://jimsgims.github.io/MyWebsite_IS117/project2.html)
 
+[Project 3(in progress)](https://jimsgims.github.io/MyWebsite_IS117/project3.html)
+
 This is a website used to host some work I've done for the class IS 117 at NJIT.
 
 ### NEW:
-- Project 1 has had some modifications to its pages for more suitable reading.
-- A footer has been created for all pages
-- Project 2 is completed!
-- The additional navbar for both project pages has been removed, and reimplemented
-into the main navbar.
+- Project 3 is underway, with the intention to appeal to an elderly audience
+- Modified website header/footer to include links to Project 3
 
 ### Thanks to:
 - Bootstrap
